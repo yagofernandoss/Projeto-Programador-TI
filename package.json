@@ -9,5 +9,21 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "dependencies": {
+    "eslint": "^9.34.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yagofernandoss/Projeto-Programador-TI.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yagofernandoss/Projeto-Programador-TI/issues"
+  },
+  "homepage": "https://github.com/yagofernandoss/Projeto-Programador-TI#readme"
 }
