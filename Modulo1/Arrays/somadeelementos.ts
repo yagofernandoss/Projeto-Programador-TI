@@ -1,3 +1,5 @@
+//soma de todos os elementos de um Array
+
 const numeros = [2,5,6,4,7,9,1,0,20,35]
 let soma = 0
 
