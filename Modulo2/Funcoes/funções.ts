@@ -182,12 +182,42 @@
 
 //função em propriedades de objetos 
 
-const pessoa = {
-    nome:'Yago',
-    idade: 29,
-    nomeidade:function(){
-        console.log (`meu nome é ${pessoa.nome} e tenho ${pessoa.idade} anos de idade`)
+// const pessoa = {
+//     nome:'Yago',
+//     idade: 29,
+//     nomeidade:function(){
+//         console.log (`meu nome é ${pessoa.nome} e tenho ${pessoa.idade} anos de idade`)
+//     }
+// }
+
+// pessoa.nomeidade()
+
+//Crie um objeto que representará uma calculadora.
+//O objeto deve conter quatro métodos que realizará as quatro operações matemáticas: soma, subtração, multiplicação e divisão
+//cada método deverá retornar o resultado da operação;
+//implemente os métodos com suas respectivas tipagens de parâmetros e retorno.
+
+type contas = {
+    soma:(a:number, b:number) => number 
+    multiplicacao:(a:number, b:number) => number
+    divisao:(a:number, b:number) => number
+    subtracao : (a:number, b:number) => number
+}
+
+const contas : contas = {
+    soma: (a,b) => a+b,
+    multiplicacao:(a,b) => a*b,
+    divisao:(a,b) => a/b,
+    subtracao: (a,b) => {
+        if (b===0){
+            throw new Error ('divisão por zero não é permitido')
+        }
+        return a/b
     }
 }
 
-pessoa.nomeidade()
+console.log('soma',contas.soma(25,37))
+console.log ('multiplicação', contas.multiplicacao(25,37))
+console.log ('divisão', contas.divisao(25,37))
+console.log ('subtração', contas.subtracao(25,37)
+)
