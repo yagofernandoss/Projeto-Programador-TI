@@ -68,6 +68,9 @@ const yago:Tpessoa = {
 
 
 
-//VERIFICANDO SE DENTRO DO OBJETO EXISTE UMA PROPRIEDADE
+// //VERIFICANDO SE DENTRO DO OBJETO EXISTE UMA PROPRIEDADE
 
-console.log('endereço' in yago)
+// console.log('endereço' in yago)
+
+
+//UNKNOW -> reassistir esta aula do módulo 2.
