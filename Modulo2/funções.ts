@@ -1,4 +1,4 @@
-//esse arquivo foi utilizando para treinamento de funções. 
+// esse arquivo foi utilizando para treinamento de funções. 
 
 
 // const usuarios = [] //Criando uma função
