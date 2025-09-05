@@ -157,14 +157,143 @@
 
 //findIndex -> Busca um elemento de um array e retorna o indice do elemento, caso exista, ou -1 caso não encontre.
 
-const pessoas = [
-    {nome: 'Yago', idade:29},
-    {nome: 'Sandra', idade: 49},
-    {nome: 'Marcos', idade:59}
-]
+// const pessoas = [
+//     {nome: 'Yago', idade:29},
+//     {nome: 'Sandra', idade: 49},
+//     {nome: 'Marcos', idade:59}
+// ]
 
-const pessoaEncontrada = pessoas.findIndex((pessoa) => {
-    return pessoa.nome === 'Marcos'
+// const pessoaEncontrada = pessoas.findIndex((pessoa) => {
+//     return pessoa.nome === 'Marcos'
+// })
+
+// console.log(pessoaEncontrada)
+
+
+//filter -> filtra e retorno um novo array, com todos os elementos encontrados.
+
+// const nomes = ['Yago', 'Kelvin', 'Lucas', 'Paulo Cesar','Marcos Fernando']
+
+// const novoArrayNomes = nomes.filter((nome) =>{
+//     return nome.length < 7
+// })
+
+// console.log(novoArrayNomes)
+
+//De acordo com o array de professores abaixo, com suas respectivas stacks, faça o seguinte:
+//a) filtrar todos os professores FullStack
+//b) filtrar todos os professores FrontEnd
+
+// type Tprofessores = {
+//     nome: string, stack: string
+// }
+
+// const professores : Tprofessores[] = [
+//     {nome:'Yago', stack: 'FullStack'},
+//     {nome:'Marcos', stack: 'FrontEnd'},
+//     {nome:'Sandra', stack: 'FrontEnd'},
+//     {nome:'Thiago', stack: 'FullStack'},
+//     {nome:'Beatriz', stack: 'FrontEnd'}
+   
+// ]
+
+// const novoArrayProfessores = professores.filter((professores) => {
+//     return professores.stack === 'FullStack'
+// })
+// console.log (novoArrayProfessores)
+
+// const FrontEnd = professores.filter((professores) => {
+//     return professores.stack === 'FrontEnd'
+// })
+// console.log (FrontEnd)
+
+//map -> vai percorrer todos os elementos de um array e retornar um novo array com o formato implementado.
+
+
+// const nome = [
+//     {firstname: 'Yago', lastname:'Fernando', age:29}
+// ]
+
+// const novoNome = nome.map (function(elemento){
+//     return {
+//         nomeCompleto : `${elemento.firstname} ${elemento.lastname}`,
+//         idade: elemento.age
+//     }
+// } )
+
+// console.log(novoNome)
+
+
+//sort -> ordena os elementos de um array, de acordo com o código unicode
+// se a comparação retornar um valor menor que zero (negativo), o item 1 vem antes do item 2
+// se a comparação retornar um valor maior que zero (positivo), o item 2 vem antes do item 1
+// se a comparação retornar zero, nenhum item sofre alteração
+
+// const numeros = [1,5,25,36,45]
+
+// numeros.sort(function (item1:number, item2:number) {
+// if (item1 < item2){
+//     return -1
+// } 
+// if (item1>item2){
+//     return +1
+// }
+// return 0
+// })
+
+// console.log(numeros)
+
+// const numeros = [1,5,25,36,45] //ordenação de forma crescente
+
+// numeros.sort((a,b)=>{
+// return a-b
+// })
+
+// console.log(numeros)
+
+// const numeros = [1,5,25,36,45] //ordenação de forma decrescente
+
+// numeros.sort((a,b)=>{
+// return b-a
+// })
+
+// console.log(numeros)
+
+//dado o array de usuarios abaixo, faça a ordenação dos resultados de forma crescente
+// segundo a idade de cada usuário. Após a ordenação crescente, faça a ordenação decrescente
+
+// 
+
+
+
+//localeCompare -> métdo de comparação de Strings
+
+// const letra1 = 'a'
+// const letra2 = 'b'
+
+// console.log(letra1.localeCompare(letra2))
+
+
+// const nomes = ['Yago','Marcos','Beatriz','Thiago','Sandra']
+
+// nomes.sort((item1,item2)=> {
+//     return item1.localeCompare(item2)
+// })
+
+// console.log(nomes)
+
+
+//reduce -> executa uma função de callback, passada como argumento, para cada elemento do array
+//que resulta em apenas um valor de retorno.
+//A função passada como argumento para o método reduce tem 4 parâmetros.
+//- acumulador
+//- valorAtual
+//- index
+// - array
+
+const numeros = [25,73,52,524,35,69]
+
+const resultado = numeros.reduce((acumulador,valorAtual,index,array) => {
+    return acumulador + valorAtual
 })
 
-console.log(pessoaEncontrada)
