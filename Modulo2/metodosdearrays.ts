@@ -223,6 +223,8 @@
 
 // console.log(novoNome)
 
+//MÉTODOS DE ARRAYS [3]
+
 
 //sort -> ordena os elementos de um array, de acordo com o código unicode
 // se a comparação retornar um valor menor que zero (negativo), o item 1 vem antes do item 2
@@ -291,9 +293,18 @@
 //- index
 // - array
 
-const numeros = [25,73,52,524,35,69]
+// const numeros = [25,73,52,524,35,69]
 
-const resultado = numeros.reduce((acumulador,valorAtual,index,array) => {
-    return acumulador + valorAtual
-})
+// const resultado = numeros.reduce((acumulador,valorAtual,index,array) => {
+//     return acumulador + valorAtual
+// })
+
+
+function saudar(nome: string) {
+return `Olá, ${nome}!`;
+}
+console.log(saudar('Yago'));
+
+
+
 
